@@ -1,0 +1,93 @@
+<!doctype html><!--申明文档的类型-->
+<html><!--页面开始-->
+	<head><!--头部开始-->		
+		<title></title><!--页面的标题-->
+		<!--申明页面的编码集是国际编码(utf-8)--中文编码有GBK GBK2312-->
+		<meta charset="utf-8"/>
+		<meta name="keywords" content="关键字，关键词"/>
+		<meta name="description" content="描述和简介"/>
+		<!--化妆，装扮页面变得更加好看-->
+		<style type="text/css">
+		.box1{/*我是文本水平对齐方式*/
+			width:500px;
+			height:500px;
+			border:1px solid red;
+			text-align:left;/*左对齐（默认值）*/
+			text-align:center;/*居中对齐*/
+			text-align:right;/*右对齐*/
+		}
+		a{
+			text-decoration:none;
+			color:black;
+		}
+		.p1{/*我是文本修饰*/
+			color:blue;
+			text-decoration:overline;/*上划线*/
+			text-decoration:underline;/*下划线*/
+		}
+		.th{
+			text-decoration:line-through;/*删除线*/
+			color:red;
+		}
+		.p2{/*首行缩进*/
+			text-indent:32px;/*固定像素值*/
+			text-indent:2em;/*1em=当前元素的字体大小*/
+		}
+		.box2{/*文本溢出处理*/
+			width:100px;
+			background:red;
+			overflow:hidden;
+			text-overflow:clip;/*超出裁剪*/
+			text-overflow:ellipsis;/*超出出现省略号*/
+		}
+		.p3{/*文本字母处理（只能英文字母）*/
+			text-transform:capitalize;/*单词首字母大写*/
+			text-transform:uppercase;/*全部大写*/
+			text-transform:lowercase;/*全部小写*/
+			/*字间距*/
+			letter-spacing:1em;/*1em=当前元素的字体大小*/
+			letter-spacing:1px;/*固定的像素值*/
+			/*词间距*/
+			word-spacing:1px;/*固定的像素值*/
+			word-spacing:1em;/*1em=当前元素的字体大小*/
+		}
+		.box3{/*文本换行方式*/
+			width:300px;
+			height:300px;
+			border:1px solid red;
+			white-space:normal;/*默认换行方式*/
+			white-space:nowrap;/*只有遇到<br/>才会换行*/
+			white-space:pre;/*保留空格、缩进、换行，但是文本不会自动换行*/
+			white-space:pre-line;/*合并空格、缩进、换行，文本自动换行*/
+			white-space:pre-wrap;/*保留空格、缩进、换行，并且文本自动换行*/
+			overflow:hidden;
+			text-overflow:ellipsis;
+		}
+		.box4{/*单词换行方式*/
+			width:300px;
+			height:300px;
+			border:1px solid red;
+			word-break:break-all;/*允许在单词内换行*/
+			word-break:keep-all;/*不运行在单词内换行*/
+		}
+		
+		</style>
+	</head><!--头部结束-->
+<body style="height:5000px;">
+	<div class="box1"><p>我是文本水平对齐方式</p></div>
+	<a href="#">百度</a>
+	<p class="p1"><span class="th">￥1500</span>课程（我是文本修饰）￥998</p>
+	<p class="p2">
+	计算机（computer）&lt;html&gt;俗称电脑，是现代一种用于高速计算的电子计算机器，可以进行数值计算，又可以进行逻辑计算，还具有存储记忆功能。是能够按照程序运行，自动、高速处理海量数据的现代化智能电子设备。
+由硬件系统和软件系统所组成，没有安装任何软件的计算机称为裸机。可分为超级计算机、工业控制计算机、网络计算机、个人计算机、嵌入式计算机五类，较先进的计算机有生物计算机、光子计算机、量子计算机等。
+计算机发明者约翰·冯·诺依曼。计算机是20世纪最先进的科学技术发明之一，对人类的生产活动和社会活动产生了极其重要的影响，并以强大的生命力飞速发展。它的应用领域从最初的军事科研应用扩展到社会的各个领域，已形成了规模巨大的计算机产业，带动了全球范围的技术进步，由此引发了深刻的社会变革，计算机已遍及一般学校、企事业单位，进入寻常百姓家，成为信息社会中必不可少的工具</p>
+	<div class="box2">sadhashdafhnvajghakflhgaklhasdadadadadadadagga</div>
+	<p class="p3">text transform 我是文本字间距和词间距</p>
+	<div class="box3"> 
+	计算机（computer）俗称电脑，是现代一种用于高速计算的电子计算机器，可以进行数值计算，又可以进行逻辑计算，还具有存储记忆功能。是能够按照程序运行，自动、高速处理海量数据的现代化智能电子设备。
+由硬件系统和软件系统所组成，没有安装任何软件的计算机称为裸机。可分为超级计算机、工业控制计算机、网络计算机、个人计算机、嵌入式计算机五类，较先进的计算机有生物计算机、光子计算机、量子计算机等。
+计算机发明者约翰·冯·诺依曼。计算机是20世纪最先进的科学技术发明之一，对人类的生产活动和社会活动产生了极其重要的影响，并以强大的生命力飞速发展。它的应用领域从最初的军事科研应用扩展到社会的各个领域，已形成了规模巨大的计算机产业，带动了全球范围的技术进步，由此引发了深刻的社会变革，计算机已遍及一般学校、企事业单位，进入寻常百姓家，成为信息社会中必不可少的工具</div>
+<div class="box4">word break word break word break word break word break word break word break word break word break</div>
+
+</body>
+</html><!--页面结束-->
